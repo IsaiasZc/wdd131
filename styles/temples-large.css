@@ -1,0 +1,21 @@
+@media screen and (min-width: 641px) {
+
+  /* Hide hamburger, show nav as row */
+  #menu-btn {
+    display: none;
+  }
+
+  #main-nav {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 1.5rem;
+    padding-top: 0;
+  }
+
+  /* Gallery – 3-column responsive grid */
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+}
