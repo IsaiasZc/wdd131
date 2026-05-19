@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Perú – facts, culture, and climate of a beautiful country in South America.">
+    <meta name="author" content="Isaias Zuniga">
+    <title>Perú – WDD 131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+
+    <header>
+      <span>Explore Perú</span>
+    </header>
+
+    <main>
+      <h1>Perú</h1>
+
+      <div class="hero-container">
+
+        <picture>
+          <source srcset="./images/peru-hero-large.webp" media="(min-width: 641px)">
+          <img
+            src="./images/peru-hero-small.webp"
+            alt="Machu Picchu, the ancient Incan citadel in Perú"
+            width="600"
+            height="400"
+            loading="lazy"
+          >
+        </picture>
+
+        <!-- Data / facts section -->
+        <section class="data">
+          <h2>About Perú</h2>
+          <table>
+            <tr>
+              <th>Capital</th>
+              <td>Lima</td>
+            </tr>
+            <tr>
+              <th>Official Language</th>
+              <td>Spanish</td>
+            </tr>
+            <tr>
+              <th>Population</th>
+              <td>~33 million</td>
+            </tr>
+            <tr>
+              <th>Area</th>
+              <td>1,285,216 km²</td>
+            </tr>
+            <tr>
+              <th>Currency</th>
+              <td>Sol (PEN)</td>
+            </tr>
+            <tr>
+              <th>Time Zone</th>
+              <td>UTC−5</td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="weather">
+          <img
+            src="./images/weather-icon.svg"
+            alt="Partly cloudy weather icon"
+            class="weather-icon-mobile"
+            width="80"
+            height="80"
+          >
+          <h2>Weather</h2>
+          <p class="weather-location">Lima, Perú</p>
+          <div class="weather-details">
+            <p>Temperature: <strong>8 °C</strong></p>
+            <p>Wind Speed: <strong>15 km/h</strong></p>
+            <p>Wind Chill: <strong><span id="windchill">—</span></strong></p>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Isaias Zuniga &mdash; Lima, Perú</p>
+      <p id="lastModified"></p>
+    </footer>
+
+  </body>
+</html>
