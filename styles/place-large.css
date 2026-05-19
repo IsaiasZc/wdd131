@@ -46,8 +46,8 @@
   }
 
   /* Pseudo-element weather icon before "Weather" heading on wide view */
-  .weather h2::before {
-    content: "⛅ ";
+  .weather h2::after {
+    content: " ⛅";
   }
 
   /* Hide hamburger, show nav as row if nav is added later */
