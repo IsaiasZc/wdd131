@@ -8,31 +8,31 @@
 
   .hero-container picture img {
     width: 100%;
-    height: 480px;
+    max-height: 650px;
+    min-height: 550px;
     object-fit: cover;
     border-radius: 8px;
     display: block;
   }
 
   /* ── Data box: top-left over the image ── */
-  .data {
+  .info {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
-    width: 220px;
+    width: 250px;
     margin-bottom: 0;
     background-color: rgba(255, 255, 255, 0.92);
+  }
+  .data {
+    top: 1rem;
+    left: 1rem;
+
   }
 
   /* ── Weather box: bottom-right over the image ── */
   .weather {
-    position: absolute;
     bottom: 1rem;
     right: 1rem;
-    width: 220px;
-    margin-bottom: 0;
     text-align: left;
-    background-color: rgba(255, 255, 255, 0.92);
   }
 
   .weather-details {

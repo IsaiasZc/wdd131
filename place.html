@@ -35,24 +35,24 @@
         </picture>
 
         <!-- Data / facts section -->
-        <section class="data">
+        <section class="data info">
           <h2>Data</h2>
           <table>
+            <tr>
+              <th>Area</th>
+              <td>1,285,216 km&sup2;</td>
+            </tr>
+            <tr>
+              <th>Population</th>
+              <td>34,900,733</td>
+            </tr>
             <tr>
               <th>Capital</th>
               <td>Lima</td>
             </tr>
             <tr>
-              <th>Official Language</th>
-              <td>Spanish</td>
-            </tr>
-            <tr>
-              <th>Population</th>
-              <td>~33 million</td>
-            </tr>
-            <tr>
-              <th>Area</th>
-              <td>1,285,216 km&sup2;</td>
+              <th>Languages</th>
+              <td>Spanish, Quechua, Aymara</td>
             </tr>
             <tr>
               <th>Currency</th>
@@ -60,13 +60,21 @@
             </tr>
             <tr>
               <th>Time Zone</th>
-              <td>UTC&minus;5</td>
+              <td>UTC-5</td>
+            </tr>
+            <tr>
+              <th>Calling Code</th>
+              <td>+51</td>
+            </tr>
+            <tr>
+              <th>Internet TLD</th>
+              <td>.pe</td>
             </tr>
           </table>
         </section>
 
         <!-- Weather section -->
-        <section class="weather">
+        <section class="weather info">
           <!-- SVG icon shown on mobile only (hidden on wide via CSS) -->
           <img
             src="./images/weather-icon.svg"
@@ -76,11 +84,22 @@
             height="80"
           >
           <h2>Weather</h2>
-          <p class="weather-location">Lima, Per&uacute;</p>
           <div class="weather-details">
-            <p>Temperature: <strong>18 &deg;C</strong></p>
-            <p>Wind Speed: <strong>15 km/h</strong></p>
-            <p>Wind Chill: <strong><span id="windchill">&mdash;</span></strong></p>
+            <table>
+              <tr>
+                <th>Temperature</th>
+                <td>18 &deg;C</td>
+              </tr>
+
+              <tr>
+                <th>Wind</th>
+                <td>15 km/h</td>
+              </tr>
+              <tr>
+                <th>Wind Chill</th>
+                <td><span id="windchill">&mdash;</span></td>
+              </tr>
+            </table>
           </div>
         </section>
 

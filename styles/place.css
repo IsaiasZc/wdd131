@@ -43,7 +43,7 @@ header h1 {
 
 /* ── Main ── */
 main {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 1.5rem auto;
   padding: 0 1rem;
 }
@@ -62,7 +62,7 @@ main {
 }
 
 /* ── Data section ── */
-.data {
+.info {
   background-color: var(--color-white);
   border-radius: 8px;
   padding: 1.5rem;
@@ -70,7 +70,7 @@ main {
   margin-bottom: 2rem;
 }
 
-.data h2 {
+.info h2 {
   font-family: var(--font-heading);
   font-size: 1.3rem;
   color: var(--color-white);
@@ -78,22 +78,22 @@ main {
   padding: 0.4rem 0.8rem;
   margin-bottom: 1rem;
   border-radius: 4px;
+  text-align: center;
 }
 
-.data table {
+table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.data th,
-.data td {
+th,
+td {
   text-align: left;
   padding: 0.4rem 0.6rem;
   font-size: 0.9rem;
-  border-bottom: 1px solid #e8e0e0;
 }
 
-.data th {
+th {
   font-weight: 700;
   color: var(--color-primary);
   text-align: right;
@@ -101,31 +101,32 @@ main {
 }
 
 /* ── Weather section ── */
-.weather {
+/* .weather {
   background-color: var(--color-white);
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 2px 8px var(--shadow-card);
   margin-bottom: 2rem;
   text-align: center;
-}
+} */
 
 /* SVG icon shown on mobile */
 .weather-icon-mobile {
   display: block;
   margin: 0 auto 0.75rem;
 }
-
-.weather h2 {
+/* 
+.info h2 {
   font-family: var(--font-heading);
   font-size: 1.3rem;
+  width: 100%;
   color: var(--color-white);
   background-color: var(--color-primary);
   padding: 0.4rem 0.8rem;
   margin-bottom: 0.75rem;
   border-radius: 4px;
   display: inline-block;
-}
+} */
 
 .weather-location {
   font-size: 0.85rem;
