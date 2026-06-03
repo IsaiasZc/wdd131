@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GameVault – Site Plan for WDD 131 Final Project by Isaias Zuniga">
+    <meta name="author" content="Isaias Zuniga">
+    <title>GameVault – Site Plan | WDD 131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="logo">Game<span>Vault</span></div>
+      <p>Site Plan | WDD 131 Final Project | Isaias Zuniga</p>
+    </header>
+
+    <main>
+
+      <!-- 1. SITE NAME -->
+      <section id="site-name">
+        <h2>Site Name</h2>
+        <p>
+          <strong>GameVault</strong>: A vault stores things worth keeping. The name fits a game collection site and doesn't tie it to a specific genre or platform.
+        </p>
+      </section>
+
+      <!-- 2. SITE PURPOSE -->
+      <section id="site-purpose">
+        <h2>Site Purpose</h2>
+        <p>
+          GameVault lets users browse a catalog of video games across multiple genres.
+          Each game card shows the title, genre, release year, and platform. Users can:
+        </p>
+        <ul>
+          <li>Search and filter games by title in real time</li>
+          <li>Click any card to see full game details</li>
+          <li>Save games to a Favorites list (stored in localStorage)</li>
+          <li>Come back later and find saved games on the Favorites page</li>
+        </ul>
+        <p>
+          It's for people who just want to track games they like, without needing Steam or a big gaming site to do it.
+        </p>
+      </section>
+
+      <!-- 3. SCENARIOS -->
+      <section id="scenarios">
+        <h2>Scenarios</h2>
+        <ul>
+          <li>"I want to find the best RPGs released after 2020. What does GameVault have listed, and how do I filter by genre?"</li>
+          <li>"I saw a game I liked but I'm not ready to buy it. How do I save it so I can find it again next time I visit?"</li>
+        </ul>
+      </section>
+
+      <!-- 4. COLOR SCHEMA -->
+      <section id="color-schema">
+        <h2>Color Schema</h2>
+        <p>Dark gaming palette. High contrast between backgrounds and accents.</p>
+        <div class="swatches">
+          <div class="swatch">
+            <div class="swatch-box" style="background-color:#0f0f1a;"></div>
+            <span>#0f0f1a<br>Page Background</span>
+          </div>
+          <div class="swatch">
+            <div class="swatch-box" style="background-color:#1a1a2e;"></div>
+            <span>#1a1a2e<br>Cards &amp; Panels</span>
+          </div>
+          <div class="swatch">
+            <div class="swatch-box" style="background-color:#e0e0ff; border:1px solid #444;"></div>
+            <span>#e0e0ff<br>Body Text</span>
+          </div>
+          <div class="swatch">
+            <div class="swatch-box" style="background-color:#7c3aed;"></div>
+            <span>#7c3aed<br>Headings &amp; Active</span>
+          </div>
+          <div class="swatch">
+            <div class="swatch-box" style="background-color:#22d3ee;"></div>
+            <span>#22d3ee<br>Buttons &amp; Links</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. TYPOGRAPHY -->
+      <section id="typography">
+        <h2>Typography</h2>
+        <ul>
+          <li>Orbitron for headings and the logo</li>
+          <li>Inter for body text, labels, and buttons</li>
+        </ul>
+        <div class="font-preview orbitron">Orbitron - GAMEVAULT HEADING SAMPLE</div>
+        <div class="font-preview inter">Inter - body text sample, easy to read at small sizes.</div>
+      </section>
+
+      <!-- 6. WIREFRAMES -->
+      <section id="wireframes">
+        <h2>Wireframes</h2>
+        <p>Home page layout for mobile and desktop views.</p>
+
+        <div class="wireframes">
+
+          <div class="wireframe">
+            <h3>Mobile (&lt; 768px)</h3>
+            <img src="images/wireframe-mobile.png" alt="Mobile wireframe showing stacked game cards with search bar and hamburger menu">
+          </div>
+
+          <div class="wireframe">
+            <h3>Desktop (&ge; 768px)</h3>
+            <img src="images/wireframe-desktop.png" alt="Desktop wireframe showing genre filter sidebar and 3-column game card grid">
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Isaias Zuniga, WDD 131 Final Project Site Plan</p>
+    </footer>
+
+  </body>
+</html>
