@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GameVault - Your saved favorite games. View and manage your collection.">
+    <meta name="author" content="Isaias Zuniga">
+    <title>GameVault - Favorites</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%237c3aed'/><text x='16' y='22' text-anchor='middle' font-size='18' fill='%2322d3ee' font-family='sans-serif' font-weight='bold'>G</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/gamevault.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html" class="logo">Game<span>Vault</span></a>
+      <nav>
+        <a href="index.html">Catalog</a>
+        <a href="favorites.html" class="active">Favorites</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="favorites-header">
+        <h1>Your Favorites</h1>
+        <button class="clear-btn" id="clear-favs">Clear All</button>
+      </div>
+      <p class="fav-count" id="fav-count"></p>
+
+      <div class="game-grid" id="game-grid"></div>
+
+      <div class="empty-state" id="empty-state" style="display:none;">
+        <p>No favorites saved yet.</p>
+        <a href="index.html">Browse the catalog</a>
+      </div>
+
+      <!-- Game Detail Modal -->
+      <div class="modal-overlay" id="modal-overlay">
+        <div class="modal" role="dialog" aria-label="Game details">
+          <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+          <div id="modal-content"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Isaias Zuniga &bull; WDD 131 &bull; <a href="references.html">References</a></p>
+    </footer>
+
+    <script src="scripts/cover-svg.js" defer></script>
+    <script src="scripts/gamevault.js" defer></script>
+  </body>
+</html>

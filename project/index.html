@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GameVault - Browse and save your favorite video games. Search by title or filter by genre.">
+    <meta name="author" content="Isaias Zuniga">
+    <title>GameVault - Game Catalog</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%237c3aed'/><text x='16' y='22' text-anchor='middle' font-size='18' fill='%2322d3ee' font-family='sans-serif' font-weight='bold'>G</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/gamevault.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html" class="logo">Game<span>Vault</span></a>
+      <nav>
+        <a href="index.html" class="active">Catalog</a>
+        <a href="favorites.html">Favorites</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Search & Genre Filters -->
+      <section class="controls">
+        <label for="search" class="visually-hidden">Search games by title</label>
+        <input type="text" id="search" class="search-box" placeholder="Search games by title...">
+        <div class="genre-filters" id="genre-filters"></div>
+      </section>
+
+      <!-- Game Card Grid -->
+      <div class="game-grid" id="game-grid"></div>
+
+      <!-- Game Detail Modal -->
+      <div class="modal-overlay" id="modal-overlay">
+        <div class="modal" role="dialog" aria-label="Game details">
+          <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+          <div id="modal-content"></div>
+        </div>
+      </div>
+
+      <!-- Review Form -->
+      <section class="review-section">
+        <h2>Submit a Review</h2>
+        <p class="form-subtitle">Share your thoughts on any game in the catalog.</p>
+        <form id="review-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="reviewer-name">Name</label>
+              <input type="text" id="reviewer-name" name="reviewer-name" required minlength="2" maxlength="60">
+            </div>
+            <div class="form-group">
+              <label for="reviewer-email">Email</label>
+              <input type="email" id="reviewer-email" name="reviewer-email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="review-game">Game</label>
+              <select id="review-game" name="review-game" required>
+                <option value="">-- Select a game --</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="review-rating">Rating (1–5)</label>
+              <input type="number" id="review-rating" name="review-rating" min="1" max="5" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="review-text">Your Review</label>
+            <textarea id="review-text" name="review-text" required minlength="10" maxlength="500" placeholder="What did you think of this game?"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit Review</button>
+          <div class="form-msg" id="form-msg"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Isaias Zuniga &bull; WDD 131 &bull; <a href="references.html">References</a></p>
+    </footer>
+
+    <script src="scripts/cover-svg.js" defer></script>
+    <script src="scripts/gamevault.js" defer></script>
+  </body>
+</html>
